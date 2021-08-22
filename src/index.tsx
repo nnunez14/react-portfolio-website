@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Contact, Dashboard, Home } from './components';
+import { Contact, Dashboard, Home, Resume } from './components';
 import './styles.css'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 // import reportWebVitals from './reportWebVitals';  //<-------need to fix?
@@ -21,6 +21,10 @@ ReactDOM.render(
 
         <Route path='/Contact'>
           <Contact></Contact>
+        </Route>
+
+        <Route path='/resume'>
+          <Resume title={''}></Resume>
         </Route>
 
       </Switch>
